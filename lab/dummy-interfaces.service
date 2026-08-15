@@ -1,0 +1,11 @@
+[Unit]
+Description=Configure Dummy Network Interfaces
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/root/dummy-interfaces.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

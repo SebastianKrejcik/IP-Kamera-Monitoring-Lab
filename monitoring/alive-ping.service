@@ -1,0 +1,11 @@
+[Unit]
+Description=A-Live Heartbeat Ping Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/alive-ping.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
