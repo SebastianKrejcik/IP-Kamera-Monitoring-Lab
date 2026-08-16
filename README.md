@@ -7,7 +7,7 @@ Ziel: Frühzeitige Erkennung von Kamerausfällen bei minimalem Bandbreitenverbra
 ---
 ## Architektur-Entscheidung
 
-** ### Ursprüngliche Idee – Zentrale Lösung **
+**### Ursprüngliche Idee – Zentrale Lösung**
 
 Am Anfang lag der Fokus klar auf einer **zentralen** Monitoring-Architektur:
 
@@ -49,7 +49,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 | Skalierbarkeit         | Begrenzt                         | Gut (viele Standorte möglich)         |
 
 ---
-** ### Die Entscheidung fiel deshalb auf eine **dezentrale Architektur**: **
+**### Die Entscheidung fiel deshalb auf eine **dezentrale Architektur**:**
 
 ```
 ┌─────────────────────┐          Cloudflare Tunnel          ┌──────────────────────┐
