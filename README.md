@@ -31,7 +31,7 @@ Diese Herangehensweise wirkte zunächst logisch und übersichtlich – besonders
 
 Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schnell klar, dass die zentrale Variante für die eigentliche Aufgabenstellung Over-Engineering ist:
 
-- Die aktuelle Anforderung beschränkt sich auf **Erreichbarkeit** (Ping).
+- Die aktuelle Anforderung beschränkt sich auf **Erreichbarkeit** (Ping) um eine generelle Machbarkeit zu evaluieren.
 - Weitere Metriken (Systemzustand, Kameradaten etc.) können später hinzukommen – müssen aber nicht permanent das Kundennetz verlassen.
 - Unnötiger Bandbreitenverbrauch entsteht, sobald viele Standorte gleichzeitig Daten senden.
 - Daten, die lokal bleiben können, erhöhen die Angriffsfläche und werfen Datenschutzfragen auf, wenn sie dauerhaft ins Internet gehen.
