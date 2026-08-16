@@ -4,10 +4,10 @@ Eine schlanke, dezentrale Überwachungsarchitektur für IP-Kameras in Kundennetz
 Jeder Standort erhält einen Raspberry Pi, der lokal die Erreichbarkeit der Kameras prüft und nur Status-/Alarm-Informationen an eine zentrale Instanz meldet. Der Zugriff erfolgt über einen Reverse-Tunnel – ohne Portweiterleitung auf Kundenseite.
 
 Ziel: Frühzeitige Erkennung von Kamerausfällen bei minimalem Bandbreitenverbrauch und hoher Sicherheit.
-
+---
 ## Architektur-Entscheidung
 
-### Ursprüngliche Idee – Zentrale Lösung
+** ### Ursprüngliche Idee – Zentrale Lösung **
 
 Am Anfang lag der Fokus klar auf einer **zentralen** Monitoring-Architektur:
 
@@ -48,7 +48,8 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 | Angriffsfläche         | Größer                           | Kleiner                               |
 | Skalierbarkeit         | Begrenzt                         | Gut (viele Standorte möglich)         |
 
-### Die Entscheidung fiel deshalb auf eine **dezentrale Architektur**:
+---
+** ### Die Entscheidung fiel deshalb auf eine **dezentrale Architektur**: **
 
 ```
 ┌─────────────────────┐          Cloudflare Tunnel          ┌──────────────────────┐
