@@ -48,7 +48,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 | Angriffsfläche         | Größer                           | Kleiner                               |
 | Skalierbarkeit         | Begrenzt                         | Gut (viele Standorte möglich)         |
 
-Die Entscheidung fiel deshalb auf eine **dezentrale Architektur**:
+### Die Entscheidung fiel deshalb auf eine **dezentrale Architektur**:
 
 ```
 ┌─────────────────────┐          Cloudflare Tunnel          ┌──────────────────────┐
