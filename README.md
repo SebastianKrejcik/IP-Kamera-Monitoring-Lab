@@ -119,7 +119,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
    - Uptime-Kuma mit zwei Push-Webhooks (Kamera-Alarm + Alive-Timeout)
  
 4. **Test**  
-   Zuerst in VirtualBox (zwei Debian-VMs), dann im Labor.  
+   In VirtualBox (zwei Debian-VMs), dann im Labor.  
    Dummy-Interfaces + Randomizer-Skript simulieren Kamerausfälle.
  
 ## Sicherheitsmaßnahmen (Härtung)
@@ -169,7 +169,7 @@ done
  
 ## Lessons Learned
  
-- **Erst gebaut, dann verworfen: Grafana in der Praxis.** Die erste produktive Umsetzung lief tatsächlich mit Grafana als zentraler Visualisierung, nicht nur als Konzept auf dem Papier (siehe "Wie wir zur finalen Lösung kamen" oben). Im laufenden Betrieb erwies sich der Stack als fehleranfällig – wiederkehrende Ping-Fehler in Grafana erforderten regelmäßig manuelle Remote-Eingriffe. Das war der eigentliche Auslöser für den kompletten Wechsel zu M/Monit: leichtgewichtiger, weniger bewegliche Teile, spürbar stabiler im Dauerbetrieb.
+- **Dezentral vs Zentral** ...folgt
 - **Erst simulieren, dann ausrollen.** Die Dummy-Interfaces mit Randomizer-Skript zum Simulieren von Kameraausfällen waren beim Testen hilfreicher als erwartet – ohne sie hätte man Ausfallszenarien nur schwer kontrolliert nachstellen können, gerade bevor überhaupt echte Hardware im Feld war.
 - **Härtung von Anfang an mitgeplant, nicht nachträglich draufgesetzt.** iptables, fail2ban und unattended-upgrades waren von der ersten Debian-Installation an Teil des Setups – das war spürbar einfacher, als sie später auf ein bereits laufendes System aufzusetzen.
  
