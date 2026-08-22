@@ -7,31 +7,9 @@ Ziel: Frühzeitige Erkennung von Kamerausfällen bei minimalem Bandbreitenverbra
  
 ---
  
-## Wie ich zur finalen Lösung kamen
- 
-Die aktuelle Architektur (siehe unten) ist nicht die erste Umsetzung, sondern das Ergebnis von zwei verworfenen Iterationen. Beide wurden tatsächlich gebaut und getestet, nicht nur als Konzept skizziert:
- 
-**Version A – Zentrales Monitoring mit Grafana** (verworfen)
- 
-![Zentrales Konzept](assets/zentrales-konzept.jpg)
- 
-Alle Kunden-Standorte senden ihre Daten über einen SSH-Reverse-Tunnel mit Portweiterleitung an einen zentralen Grafana-Server. Funktionierte grundsätzlich, brachte aber unnötigen Verwaltungsaufwand für die Tunnel-Portweiterleitung pro Kunde mit sich.
- 
-**Version B – Dezentrales Monitoring mit Grafana** (verworfen)
- 
-![Dezentrales Konzept](assets/dezentrales-konzept.jpg)
- 
-Cloudflare ersetzte die manuelle Portweiterleitung, die Grundidee der Dezentralisierung stand schon. Grafana blieb aber im Praxisbetrieb fehleranfällig – wiederkehrende Ping-Fehler erforderten regelmäßige manuelle Remote-Eingriffe (siehe Pfeil "Remote, falls Grafana-Ping-Fehler" im Diagramm).
- 
-**Finale Version – Dezentral mit M/Monit**
- 
-Die Dezentralisierung wurde beibehalten, Grafana komplett durch M/Monit ersetzt: leichtgewichtiger, weniger bewegliche Teile, spürbar stabiler im Dauerbetrieb. Details zur finalen Architektur direkt im nächsten Abschnitt.
- 
----
- 
 ## Architektur-Entscheidung
  
-**Ursprüngliche Idee – Zentrale Lösung**
+Ursprüngliche Idee – Zentrale Lösung
  
 Am Anfang lag der Fokus klar auf einer **zentralen** Monitoring-Architektur:
  
@@ -61,7 +39,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 - Daten, die lokal bleiben können, erhöhen die Angriffsfläche und werfen Datenschutzfragen auf, wenn sie dauerhaft ins Internet gehen.
 - Ein schlankes Edge-Device ist stabiler und einfacher zu warten als ein voller Monitoring-Agent mit vielen Abhängigkeiten.
  
-**Ergebnis der Abwägung:**
+Ergebnis der Abwägung:
  
 | Kriterium              | Zentrale Lösung                  | Dezentrale Lösung                     |
 |------------------------|----------------------------------|---------------------------------------|
