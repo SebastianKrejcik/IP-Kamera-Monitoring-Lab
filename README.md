@@ -77,10 +77,10 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
  
 ```
 ┌─────────────────────┐          Cloudflare Tunnel           ┌──────────────────────┐
-│  Kundennetzwerk     │  ←─────────────────────────────────→ │  Zentrale Instanz    │
+│  Kundennetzwerk     │  ─────────────────────────────────   │  Zentrale Instanz    │
 │                     │                                      │                      │
 │  Raspberry Pi       │   Nur Alive-Ping + Alarme            │  Uptime-Kuma         │
-│  ├─ Debian / RPi OS │  ──────────────────────────────────→ │  (Status + Alerts)   │
+│  ├─ Debian / RPi OS │  ──────────────────────────────────  │  (Status + Alerts)   │
 │  ├─ M/Monit         │                                      │                      │
 │  │   └─ Ping Checks │                                      └──────────────────────┘
 │  ├─ iptables        │
