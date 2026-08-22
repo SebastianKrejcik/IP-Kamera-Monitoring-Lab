@@ -76,7 +76,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 **Die Entscheidung fiel deshalb auf eine dezentrale Architektur**
  
 ```
-┌─────────────────────┐          Cloudflare Tunnel          ┌──────────────────────┐
+┌─────────────────────┐          Cloudflare Tunnel           ┌──────────────────────┐
 │  Kundennetzwerk     │  ←─────────────────────────────────→ │  Zentrale Instanz    │
 │                     │                                      │                      │
 │  Raspberry Pi       │   Nur Alive-Ping + Alarme            │  Uptime-Kuma         │
