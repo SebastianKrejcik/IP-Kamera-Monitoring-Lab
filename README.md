@@ -7,7 +7,7 @@ Ziel: Frühzeitige Erkennung von Kamerausfällen bei minimalem Bandbreitenverbra
  
 ---
  
-## Wie wir zur finalen Lösung kamen
+## Wie ich zur finalen Lösung kamen
  
 Die aktuelle Architektur (siehe unten) ist nicht die erste Umsetzung, sondern das Ergebnis von zwei verworfenen Iterationen. Beide wurden tatsächlich gebaut und getestet, nicht nur als Konzept skizziert:
  
