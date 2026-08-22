@@ -96,7 +96,7 @@ Der Raspberry Pi überwacht die Kameras **lokal** mit M/Monit. An die zentrale I
 1. Alive-Ping (Pi ist erreichbar)
 2. Alarm-Webhook (Kamera nicht erreichbar)
  
-Techniker können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.  
+Admins können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.  
 Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage für spätere Erweiterungen.
  
 ## Kernfunktionen
