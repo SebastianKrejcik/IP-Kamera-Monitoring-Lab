@@ -99,7 +99,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
  
 ## Tech-Stack
 ---
----
+
 | Komponente              | Technologie                          | Zweck                              |
 |-------------------------|--------------------------------------|------------------------------------|
 | Hardware                | Raspberry Pi 4                       | Edge-Device                        |
@@ -112,7 +112,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
 | Updates                 | unattended-upgrades                  | Automatische Security-Patches      |
 | Orchestrierung          | systemd                              | Services & Timer                   |
 | Skripting               | Bash                                 | Dummy-Interfaces, Alive-Ping, etc. |
----
+
 ---
 ## Schutzbedarfsanalyse
  
