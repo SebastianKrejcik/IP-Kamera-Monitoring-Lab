@@ -226,5 +226,5 @@ done
 - High-Availability für die zentrale Uptime-Kuma-Instanz
 - Integration in bestehende Ticket-/Alert-Systeme
  
----
+--
  
