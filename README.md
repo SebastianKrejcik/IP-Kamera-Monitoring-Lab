@@ -23,7 +23,7 @@ Am Anfang lag der Fokus klar auf einer **zentralen** Monitoring-Architektur:
 ```
  
 **Gedanke dahinter:**  
-Ein Raspberry Pi pro Standort sammelt die Erreichbarkeit der Kameras (und perspektivisch weitere Daten) und schickt alles an eine zentrale Monitoring-Instanz. Dort entsteht ein einheitliches Dashboard für alle Kundenstandorte. Techniker sehen auf einen Blick den Status aller Kameras und können bei Bedarf eingreifen.
+Ein Raspberry Pi pro Standort sammelt die Erreichbarkeit der Kameras (und perspektivisch weitere Daten) und schickt alles an eine zentrale Monitoring-Instanz. Dort entsteht ein einheitliches Dashboard für alle Kundenstandorte. Techniker und Admins sehen auf einen Blick den Status aller Kameras und können bei Bedarf eingreifen.
  
 Diese Herangehensweise wirkte zunächst logisch und übersichtlich – besonders wenn man an eine wachsende Anzahl von Standorten denkt.
  
