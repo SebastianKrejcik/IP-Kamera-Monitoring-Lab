@@ -37,13 +37,13 @@ Diese Herangehensweise wirkte zunächst logisch und übersichtlich – besonders
 ### Der Umschwung – Warum dezentral?
  
 Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schnell klar, dass die zentrale Variante für die eigentliche Aufgabenstellung Over-Engineering ist:
- 
-<ins>**Kernprinzip: Daten bleiben lokal – nur die Information "Alles gut" oder "Problem" geht raus.**</ins> 
+
+<ins>**Kernprinzip: Daten bleiben lokal – nur die Information "Alles gut" oder "Problem" geht raus.**</ins>
 
 - Die aktuelle Anforderung beschränkt sich auf ein Erreichbarkeit-Ping, um eine generelle Machbarkeit zu evaluieren.
-- Weitere Metriken (Systemzustand, Kameradaten etc.) können später hinzukommen, in Form von weiteren Alert-Pings, wenn Schwellenwerte überschritten sind – die eigentlichen Metriken müssen aber nicht permanent das Kundennetzwerk verlassen.
+- Weitere Metriken (Systemzustand, Kameradaten etc.) können später hinzukommen, in Form von weiteren Alert-Pings, **wenn Schwellenwerte überschritten sind** – die eigentlichen Metriken müssen aber nicht permanent das Kundennetzwerk verlassen.
 - Unnötiger Bandbreitenverbrauch entsteht, sobald viele Standorte gleichzeitig Daten senden.
-- Daten, die lokal bleiben können, erhöhen die Angriffsfläche und werfen Datenschutzfragen auf, wenn sie dauerhaft ins Internet gehen.
+- Daten, die lokal bleiben können, verringern die Angriffsfläche und vermeiden Datenschutzfragen, wenn sie dauerhaft ins Internet gehen.
 - Einfache Skalierbarkeit für mehrere Kunden
 - Ein schlankes Edge-Device ist stabiler und einfacher zu warten als ein voller Monitoring-Agent mit vielen Abhängigkeiten.
  
