@@ -62,7 +62,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 ┌─────────────────────┐          Cloudflare Tunnel           ┌──────────────────────┐
 │  Kundennetzwerk     │  <─────────────────────────────────> │  Zentrale Instanz    │
 │                     │                                      │                      │
-│  Raspberry Pi       │       Nur Alive-Ping + Alarme        │  Uptime-Kuma         │
+│  Raspberry Pi       │  Rasberry + Cam-Alive-Ping + Alarme  │  Uptime-Kuma         │
 │  ├─ Debian / RPi OS │  ──────────────────────────────────> │  (Status + Alerts)   │
 │  ├─ M/Monit         │                                      │                      │
 │  │   └─ Ping Checks │                                      └──────────────────────┘
@@ -145,7 +145,7 @@ Da der Raspberry Pi direkt ins Kundennetzwerk eingebunden wird, trägt der Betre
    - Härtung (Dienste deaktivieren, iptables, fail2ban, unattended-upgrades)  
    - cloudflared als systemd-Service  
    - M/Monit-Agent + Alive-Ping-Skript als systemd-Service  
-   - Uptime-Kuma mit zwei Push-Webhooks (Kamera-Alarm + Alive-Timeout)
+   - Uptime-Kuma mit zwei Push-Webhooks (Kamera-Alarm + Raspberry Alive + Alive-Timeout)
  
 4. **Test**  
    In VirtualBox (zwei Debian-VMs), Dummy-Interfaces + Randomizer-Skript simulieren Kamerausfälle.
