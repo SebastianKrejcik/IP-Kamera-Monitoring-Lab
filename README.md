@@ -41,6 +41,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 - Weitere Metriken (Systemzustand, Kameradaten etc.) können später hinzukommen, in Form von weiteren Alert-Pings, wenn Schwellenwerte überschritten sind – die eigentlichen Metriken müssen aber nicht permanent das Kundennetzwerk verlassen.
 - Unnötiger Bandbreitenverbrauch entsteht, sobald viele Standorte gleichzeitig Daten senden.
 - Daten, die lokal bleiben können, erhöhen die Angriffsfläche und werfen Datenschutzfragen auf, wenn sie dauerhaft ins Internet gehen.
+- Einfache Skalierbarkeit für mehrere Kunden
 - Ein schlankes Edge-Device ist stabiler und einfacher zu warten als ein voller Monitoring-Agent mit vielen Abhängigkeiten.
  
 **Ergebnis der Abwägung:**
