@@ -98,7 +98,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
 - Vollständig headless betreibbar
  
 ## Tech-Stack
-
+---
 ---
 | Komponente              | Technologie                          | Zweck                              |
 |-------------------------|--------------------------------------|------------------------------------|
@@ -113,7 +113,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
 | Orchestrierung          | systemd                              | Services & Timer                   |
 | Skripting               | Bash                                 | Dummy-Interfaces, Alive-Ping, etc. |
 ---
-
+---
 ## Schutzbedarfsanalyse
  
 Um das Schadensrisiko einzuschätzen, wurden vor der Umsetzung mögliche Bedrohungsszenarien bewertet:
@@ -151,7 +151,7 @@ Da der Raspberry Pi direkt ins Kundennetzwerk eingebunden wird, trägt der Betre
    - Härtung (Dienste deaktivieren, iptables, fail2ban, unattended-upgrades)  
    - cloudflared als systemd-Service  
    - M/Monit-Agent + Alive-Ping-Skript als systemd-Service  
-   - Uptime-Kuma mit zwei Push-Webhooks (Kamera-Alarm + Raspberry Alive + Alive-Timeout)
+   - Uptime-Kuma mit zwei Push-Webhooks (Kamera-Alarm + Raspberry-Alive); Timeout wird bei ausbleibendem Alive-Ping automatisch erkannt
  
 4. **Test**  
    In VirtualBox (zwei Debian-VMs), Dummy-Interfaces + Randomizer-Skript simulieren Kamerausfälle.
