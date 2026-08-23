@@ -98,7 +98,6 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
 - Vollständig headless betreibbar
  
 ## Tech-Stack
----
 
 | Komponente              | Technologie                          | Zweck                              |
 |-------------------------|--------------------------------------|------------------------------------|
@@ -113,7 +112,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
 | Orchestrierung          | systemd                              | Services & Timer                   |
 | Skripting               | Bash                                 | Dummy-Interfaces, Alive-Ping, etc. |
 
----
+
 ## Schutzbedarfsanalyse
  
 Um das Schadensrisiko einzuschätzen, wurden vor der Umsetzung mögliche Bedrohungsszenarien bewertet:
