@@ -110,7 +110,7 @@ Um das Schadensrisiko einzuschätzen, wurden vor der Umsetzung mögliche Bedrohu
 | Ausfall der Konnektivität | Netzwerkprobleme, ISP-Ausfälle | Verlust der Verbindung zum Internet, beeinträchtigte Fernüberwachung und Wartung | Mittel |
 | Kompromittierung des Systems | Selbstverschuldeter Fehler oder Angriffe durch Dritte | Möglicher weiterer Zugriff auf das Kundennetzwerk, im schlimmsten Fall Ausschalten der gesamten Alarm- und Überwachungsanlage | **Existenzbedrohend** |
  
-Da der Raspberry Pi direkt ins Kundennetzwerk eingebunden wird, trägt der Betreiber der Lösung Verantwortung für mögliche Schäden bei einer Kompromittierung. Bei einer größeren Zahl angeschlossener Kundenstandorte wird dieses Szenario deshalb als existenzbedrohend eingestuft – der Hauptgrund für die konsequente Systemhärtung im nächsten Abschnitt.
+Da der Raspberry Pi direkt ins Kundennetzwerk eingebunden wird, trägt der Betreiber der Lösung Verantwortung für mögliche Schäden bei einer Kompromittierung. Bei einer größeren Zahl angeschlossener Kundenstandorte wird dieses Szenario deshalb als existenzbedrohend eingestuft – der Hauptgrund für die konsequente Systemhärtung.
  
 ## Projektphasen (kurz)
  
