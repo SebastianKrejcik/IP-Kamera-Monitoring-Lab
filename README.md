@@ -220,7 +220,7 @@ done
 - Praxisnahe Linux-Systemadministration (Debian/RPi OS, systemd, iptables, fail2ban)
 - Bash-Skripting + systemd-Service-Integration
 - Monitoring-Tools (M/Monit, Uptime-Kuma) und Webhook-basierte Alarmierung
-- Strukturiertes Vorgehen: Analyse → Nutzwertanalyse → Härtung → Test (VM + Labor)
+- Strukturiertes Vorgehen: Analyse → Nutzwertanalyse → Härtung → Test (VM)
 - Bewusstes Abwägen von Bandbreite, Datenschutz und Erweiterbarkeit
  
 ## Lessons Learned
