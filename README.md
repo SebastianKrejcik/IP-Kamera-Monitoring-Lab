@@ -81,7 +81,8 @@ Der Raspberry Pi überwacht die Kameras **lokal** mit M/Monit. An die zentrale I
   - **Raspberry-Alive-Ping** – der Pi meldet sich regelmäßig bei Uptime-Kuma
   - **Timeout-Alarm** – wird in Uptime-Kuma ausgelöst, wenn der Alive-Ping ausbleibt
  
-Admins können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.  
+Admins können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.
+Sie bekommen auch eine Nachricht über Uptime-Kuma falls der Raspberry ausfällt.
 Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage für spätere Erweiterungen.
 
 ## Kernfunktionen
