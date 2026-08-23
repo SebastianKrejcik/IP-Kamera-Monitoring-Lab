@@ -1,4 +1,4 @@
-
+## Projektzusammenfassung
 Dezentrale Monitoring-Lösung für IP-Kameras mit Raspberry Pi unter Linux
  
 Eine schlanke, dezentrale Überwachungsarchitektur für IP-Kameras in Kundennetzwerken.  
