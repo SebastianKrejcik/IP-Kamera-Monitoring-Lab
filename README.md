@@ -168,14 +168,13 @@ bantime / findtime / maxretry angepasst
 Automatische Security-Updates aktiv
 ```
  
-Zusätzlich: Cloudflare Tunnel ersetzt klassische Portweiterleitung → kein offener Port am Kundenrouter.
- 
-**Cloudflare Tunnel Installation**
+## Cloudflare Tunnel Installation**
 ```bash
 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm.deb
 sudo dpkg -i cloudflared.deb
 sudo cloudflared service install --legacy-token <TOKEN>
 ```
+Cloudflare Tunnel ersetzt klassische Portweiterleitung → kein offener Port am Kundenrouter.
  
 ## Beispiel-Skripte/Konfiguration (Auszug)
  
