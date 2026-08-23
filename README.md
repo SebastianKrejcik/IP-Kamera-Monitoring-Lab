@@ -74,7 +74,7 @@ Der Raspberry Pi überwacht die Kameras **lokal** mit M/Monit. An die zentrale I
  
 Admins können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.  
 Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage für spätere Erweiterungen.
- 
+ im nächsten Abschnitt.im nächsten Abschnitt.
 ## Kernfunktionen
  
 - **Lokale Erreichbarkeitsüberwachung** der IP-Kameras per ICMP (M/Monit)
@@ -228,4 +228,3 @@ done
  
 ---
  
-**Hinweis:** Dieses Repository enthält die Dokumentation und Beispiel-Skripte aus einer betrieblichen Projektarbeit (Abschlussprüfung Fachinformatiker Systemintegration).  
