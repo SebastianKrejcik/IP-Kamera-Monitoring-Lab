@@ -168,7 +168,7 @@ bantime / findtime / maxretry angepasst
 Automatische Security-Updates aktiv
 ```
  
-## Cloudflare Tunnel Installation**
+## Cloudflare Tunnel Installation
 ```bash
 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm.deb
 sudo dpkg -i cloudflared.deb
