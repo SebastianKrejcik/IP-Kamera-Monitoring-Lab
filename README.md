@@ -13,10 +13,10 @@ Am Anfang lag der Fokus klar auf einer **zentralen** Monitoring-Architektur:
 
 ```
 ┌─────────────────────┐          Internet / Tunnel           ┌──────────────────────┐
-│  Kundennetzwerk     │  ──────────────────────────────────→ │  Zentrale Instanz    │
+│  Kundennetzwerk     │  ──────────────────────────────────  │  Zentrale Instanz    │
 │                     │                                      │                      │
-│  Raspberry Pi       │   Alle Status- und Metrikdaten       │  Zentrales Dashboard │
-│  (nur Agent)        │  werden nach außen gesendet          │  + Alarmierung       │
+│  Raspberry Pi       │     Alle Status- und Metrikdaten     │  Zentrales Dashboard │
+│  (nur Agent)        │     werden nach außen gesendet       │  + Alarmierung       │
 │                     │                                      │                      │
 │  IP-Kameras         │                                      └──────────────────────┘
 └─────────────────────┘
@@ -52,11 +52,11 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 **Die Entscheidung fiel deshalb auf eine dezentrale Architektur**
 
 ```
-┌─────────────────────┐          Cloudflare Tunnel          ┌──────────────────────┐
-│  Kundennetzwerk     │  ←─────────────────────────────────→ │  Zentrale Instanz    │
+┌─────────────────────┐          Cloudflare Tunnel           ┌──────────────────────┐
+│  Kundennetzwerk     │   ─────────────────────────────────  │  Zentrale Instanz    │
 │                     │                                      │                      │
-│  Raspberry Pi       │   Nur Alive-Ping + Alarme            │  Uptime-Kuma         │
-│  ├─ Debian / RPi OS │  ──────────────────────────────────→ │  (Status + Alerts)   │
+│  Raspberry Pi       │       Nur Alive-Ping + Alarme        │  Uptime-Kuma         │
+│  ├─ Debian / RPi OS │   ─────────────────────────────────  │  (Status + Alerts)   │
 │  ├─ M/Monit         │                                      │                      │
 │  │   └─ Ping Checks │                                      └──────────────────────┘
 │  ├─ iptables        │
@@ -87,7 +87,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
 ## Tech-Stack
 
 | Komponente              | Technologie                          | Zweck                              |
-|-------------------------|---------------------------------------|-------------------------------------|
+|-------------------------|--------------------------------------|------------------------------------|
 | Hardware                | Raspberry Pi 4                       | Edge-Device                        |
 | Betriebssystem          | Debian / Raspberry Pi OS             | Leichtgewichtig, stabil            |
 | Lokales Monitoring      | M/Monit                              | ICMP-Checks, Webhook-Trigger       |
