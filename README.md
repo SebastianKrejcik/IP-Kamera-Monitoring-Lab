@@ -1,10 +1,14 @@
+
 Dezentrale Monitoring-Lösung für IP-Kameras mit Raspberry Pi unter Linux
  
 Eine schlanke, dezentrale Überwachungsarchitektur für IP-Kameras in Kundennetzwerken.  
 Jeder Standort erhält einen Raspberry Pi, der lokal die Erreichbarkeit der Kameras prüft und nur Status-/Alarm-Informationen an eine zentrale Instanz meldet. Der Zugriff erfolgt über einen Reverse-Tunnel – ohne Portweiterleitung auf Kundenseite.
- 
-Ziel: Frühzeitige Erkennung von Kamerausfällen bei minimalem Bandbreitenverbrauch und hoher Sicherheit.
- 
+
+## Warum das Projekt?
+
+Problem: Kunden einer Sicherheitsfirma bemerken Kameraausfälle selber zuerst und dann meistens zu spät – weil die Überwachung über separate Hersteller-Dashboards läuft, welche nicht ständig einzeln aufgerufen wurden.
+Ziel: Die Sicherheitsfirma will eine zentrale Sicht auf alle Kameras.
+
 ## Architektur-Entscheidung
  
 **Ursprüngliche Idee – Zentrale Lösung**
