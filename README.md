@@ -62,7 +62,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 ┌─────────────────────┐          Cloudflare Tunnel           ┌──────────────────────┐
 │  Kundennetzwerk     │  <─────────────────────────────────> │  Zentrale Instanz    │
 │                     │                                      │                      │
-│  Raspberry Pi       │  Rasberry + Cam-Alive-Ping + Alarme  │  Uptime-Kuma         │
+│  Raspberry Pi       │  Raspberry + Cam-Alive-Ping + Alarme │  Uptime-Kuma         │
 │  ├─ Debian / RPi OS │  ──────────────────────────────────> │  (Status + Alerts)   │
 │  ├─ M/Monit         │                                      │                      │
 │  │   └─ Ping Checks │                                      └──────────────────────┘
@@ -81,7 +81,7 @@ Der Raspberry Pi überwacht die Kameras **lokal** mit M/Monit. An die zentrale I
  
 Admins können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.  
 Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage für spätere Erweiterungen.
- im nächsten Abschnitt.im nächsten Abschnitt.
+
 ## Kernfunktionen
  
 - **Lokale Erreichbarkeitsüberwachung** der IP-Kameras per ICMP (M/Monit)
