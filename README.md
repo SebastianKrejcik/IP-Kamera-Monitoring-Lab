@@ -7,6 +7,7 @@ Jeder Standort erhält einen Raspberry Pi, der lokal die Erreichbarkeit der Kame
 ## Warum das Projekt?
 
 Problem: Kunden einer Sicherheitsfirma bemerken Kameraausfälle selber zuerst und dann meistens zu spät – weil die Überwachung über separate Hersteller-Dashboards läuft, welche nicht ständig einzeln aufgerufen wurden.
+
 Ziel: Die Sicherheitsfirma will eine zentrale Sicht auf alle Kameras.
 
 ## Architektur-Entscheidung
