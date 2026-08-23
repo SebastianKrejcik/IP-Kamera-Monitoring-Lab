@@ -119,7 +119,7 @@ Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage
    - Uptime-Kuma mit zwei Push-Webhooks (Kamera-Alarm + Alive-Timeout)
  
 4. **Test**  
-   In VirtualBox (zwei Debian-VMs), dann im Labor.  
+   In VirtualBox (zwei Debian-VMs), 
    Dummy-Interfaces + Randomizer-Skript simulieren Kamerausfälle.
  
 ## Sicherheitsmaßnahmen (Härtung)
