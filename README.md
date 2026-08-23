@@ -73,7 +73,7 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
 │  ├─ fail2ban        │
 │  └─ unattended-upgr.│
 │                     │
-│  IP-Kameras         │   (weitere Metriken bleiben lokal!!)
+│  IP-Kameras         │   (weitere Metriken bleiben lokal)
 └─────────────────────┘
 ```
  
@@ -129,7 +129,7 @@ Da der Raspberry Pi direkt ins Kundennetzwerk eingebunden wird, trägt der Betre
  
 1. **Analyse**  
    Ist-Zustand: Hersteller-Dashboards, keine zentrale Sicht, Kunden erlauben keine Portweiterleitung.  
-   Schutzbedarfsanalyse (Verfügbarkeit, Vertraulichkeit, Integrität) → Einstufung „hoch" wegen potenzieller Netzwerk-Kompromittierung.
+   Schutzbedarfsanalyse (Verfügbarkeit, Vertraulichkeit, Integrität) → Einstufung „Existenzbedrohend" wegen potenzieller Netzwerk-Kompromittierung.
  
 2. **Entwurf**  
    Software-Evaluation + Nutzwertanalyse (Netdata, Grafana-Stack, M/Monit, Checkmk):
