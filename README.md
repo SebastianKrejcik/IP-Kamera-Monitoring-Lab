@@ -76,8 +76,10 @@ Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schne
  
 **Kernprinzip der finalen Lösung:**  
 Der Raspberry Pi überwacht die Kameras **lokal** mit M/Monit. An die zentrale Instanz gehen nur:
-1. Alive-Ping (Pi ist erreichbar)
-2. Alarm-Webhook (Kamera nicht erreichbar)
+- Webhook-basierte Alarmierung mit drei Komponenten:
+  - **Kamera-Alarm-Webhook** – wird von M/Monit bei Kameraausfall getriggert
+  - **Raspberry-Alive-Ping** – der Pi meldet sich regelmäßig bei Uptime-Kuma
+  - **Timeout-Alarm** – wird in Uptime-Kuma ausgelöst, wenn der Alive-Ping ausbleibt
  
 Admins können sich bei Bedarf über den Cloudflare-Tunnel auf den Pi schalten und dort tiefer analysieren.  
 Damit ist die Lösung schlanker, sicherer und gleichzeitig die bessere Grundlage für spätere Erweiterungen.
