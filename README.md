@@ -31,8 +31,9 @@ Diese Herangehensweise wirkte zunächst logisch und übersichtlich – besonders
  
 Während der ersten Prototypen und der konkreten Anforderungsanalyse wurde schnell klar, dass die zentrale Variante für die eigentliche Aufgabenstellung Over-Engineering ist:
  
- -**Kernprinzip: Daten bleiben lokal – nur die Information "Alles gut" oder "Problem" geht raus.**  
+ **Kernprinzip: Daten bleiben lokal – nur die Information "Alles gut" oder "Problem" geht raus.**  
   Statt komplexe Metriken ins Internet zu senden, werden sie lokal geprüft. Nur das Ergebnis (JA/NEIN) wird zentral gesammelt. Das spart Bandbreite, schützt die Privatsphäre und macht die Lösung stabiler.
+  
 - Die aktuelle Anforderung beschränkt sich auf **Erreichbarkeit** (Ping) um eine generelle Machbarkeit zu evaluieren.
 - Weitere Metriken (Systemzustand, Kameradaten etc.) können später hinzukommen, in Form von weiteren Alert-Pings, wenn Schwellenwerte überschritten sind – die eigentlichen Metriken müssen aber nicht permanent das Kundennetzwerk verlassen.
 - Unnötiger Bandbreitenverbrauch entsteht, sobald viele Standorte gleichzeitig Daten senden.
