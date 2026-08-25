@@ -20,12 +20,12 @@ Am Anfang lag der Fokus klar auf einer **zentralen** Monitoring-Architektur:
  
 ```
 ┌─────────────────────┐          Internet / Tunnel           ┌──────────────────────┐
-│  Kundennetzwerk     │  ──────────────────────────────────> │  Zentrale Instanz    │
+│   Kundennetzwerk    │  ──────────────────────────────────> │   Zentrale Instanz   │
 │                     │                                      │                      │
-│  Raspberry Pi       │     Alle Status- und Metrikdaten     │  Zentrales Dashboard │
-│  (nur Agent)        │      werden nach außen gesendet      │  + Alarmierung       │
+│    Raspberry Pi     │     Alle Status- und Metrikdaten     │  Zentrales Dashboard │
+│    (nur Agent)      │      werden nach außen gesendet      │  + Alarmierung       │
 │                     │                                      │                      │
-│  IP-Kameras         │                                      └──────────────────────┘
+│     IP-Kameras      │                                      └──────────────────────┘
 └─────────────────────┘
 ```
  
