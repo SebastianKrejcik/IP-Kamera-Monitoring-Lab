@@ -199,7 +199,7 @@ Die Kunden von der Sicherheitsfirma sind selbst sicherheitsrelevante Betriebe (u
                                                                           │
                                                                           v
                                                                ┌──────────────────────┐
-                                                               │  Sicherheiztsfirma   │
+                                                               │  Sicherheitsfirma    │
                                                                │  greift über Tunnel  │
                                                                │    auf den Pi zu     │
                                                                └──────────────────────┘
