@@ -172,6 +172,40 @@ bantime / findtime / maxretry angepasst
 # unattended-upgrades
 Automatische Security-Updates aktiv
 ```
+## Warum überhaupt ein Reverse Tunnel?
+
+Die Kunden von teifke sind selbst sicherheitsrelevante Betriebe (u. a. Einzelhandel mit hohem Bargeld-/Warenbestand). Solche Firmen haben in der Regel eine strikte Firewall-Policy, die **keine eingehenden Verbindungen von außen** zulässt – unabhängig davon, wie klein oder vertrauenswürdig der Dienstleister ist. Eine Portweiterleitung für den Raspberry Pi käme für sie aus Sicherheitsgründen grundsätzlich nicht infrage.
+
+**Ohne Tunnel – klassische Portweiterleitung (von den Kunden verboten)**
+
+```
+┌─────────────────────┐                                       ┌──────────────────────┐
+│    Kundennetzwerk   │  <─────────────────────X───────────   │  Sicherheitsfirma    │
+│                     │           Inbound blockiert           │                      │
+│      Firewall:      │     (Firewall-Policy des Kunden)      │    will von außen    │
+│    Inbound = DROP   │                                       │ auf den Pi zugreifen │
+└─────────────────────┘                                       └──────────────────────┘
+```
+
+**Mit Reverse Tunnel – Verbindungsrichtung umgedreht**
+
+```
+┌──────────────────────┐           Cloudflare Tunnel           ┌──────────────────────┐
+│    Kundennetzwerk    │  ─────────────────────────────────>   │    Cloudflare Edge   │
+│                      │        Raspberry baut Outbound-       │                      │
+│     Raspberry Pi     │        Verbindung selbst auf          │   hält Tunnel offen  │
+│  (initiiert Verb.)   │                                       │                      │
+└──────────────────────┘                                       └──────────┬───────────┘
+                                                                          │
+                                                                          v
+                                                               ┌──────────────────────┐
+                                                               │  Sicherheiztsfirma   │
+                                                               │  greift über Tunnel  │
+                                                               │    auf den Pi zu     │
+                                                               └──────────────────────┘
+```
+
+Outbound-Traffic ist an fast jeder Unternehmens-Firewall standardmäßig erlaubt, weil er vom eigenen, internen Gerät ausgeht. Der Kunde muss also **keine** Ausnahme einrichten oder Kontrolle abgeben – das war die entscheidende Anforderung, die eine klassische Portweiterleitung ausgeschlossen hat.
  
 ## Cloudflare Tunnel Installation
 ```bash
