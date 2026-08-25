@@ -174,7 +174,7 @@ Automatische Security-Updates aktiv
 ```
 ## Warum überhaupt ein Reverse Tunnel?
 
-Die Kunden von der Sicherheitsfirma sind selbst sicherheitsrelevante Betriebe (u. a. Einzelhandel mit hohem Bargeld-/Warenbestand, Juweliere etc.). Solche Firmen haben in der Regel eine strikte Firewall-Policy, die **keine eingehenden Verbindungen von außen** zulässt – unabhängig davon, wie klein oder vertrauenswürdig der Dienstleister ist. Eine Portweiterleitung für den Raspberry Pi käme für sie aus Sicherheitsgründen grundsätzlich nicht infrage.
+Die Kunden der Sicherheitsfirma sind selbst sicherheitsrelevante Betriebe (u. a. Einzelhandel mit hohem Bargeld-/Warenbestand, Juweliere etc.). Solche Firmen haben in der Regel eine strikte Firewall-Policy, die **keine eingehenden Verbindungen von außen** zulässt – unabhängig davon, wie klein oder vertrauenswürdig der Dienstleister ist. Eine Portweiterleitung für den Raspberry Pi käme für sie aus Sicherheitsgründen grundsätzlich nicht infrage.
 
 **Ohne Tunnel – klassische Portweiterleitung (von den Kunden verboten)**
 
